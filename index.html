@@ -1,1 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amna Maryam Bhutto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --sky: #E6F0FA;
+      --ink: #1B2A41;
+      --mulberry: #8E3B6B;
+      --mist: #FFFFFF;
+      --soft: #5B6B82;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Lexend", Arial, sans-serif;
+      background: var(--sky);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    a { color: var(--mulberry); }
+    a:focus-visible { outline: 3px solid var(--mulberry); outline-offset: 3px; }
 
+    /* Top: big name with a cloud behind it */
+    header {
+      position: relative;
+      padding: 18vh 8vw 12vh;
+      overflow: hidden;
+    }
+    header svg {
+      position: absolute;
+      right: -6vw;
+      top: 6vh;
+      width: min(620px, 80vw);
+      opacity: 0.9;
+      z-index: 0;
+    }
+    header h1, header p { position: relative; z-index: 1; }
+    header h1 {
+      font-size: clamp(2.6rem, 8vw, 6rem);
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -0.03em;
+      max-width: 12ch;
+    }
+    header p {
+      margin-top: 1.5rem;
+      font-size: 1.2rem;
+      font-weight: 300;
+      max-width: 40ch;
+    }
+
+    main { background: var(--mist); padding: 4rem 8vw; }
+    section { max-width: 760px; margin-bottom: 3.5rem; }
+    h2 { font-size: 1.6rem; font-weight: 600; margin-bottom: 1rem; }
+
+    .skills { display: flex; flex-wrap: wrap; gap: 0.6rem; list-style: none; }
+    .skills li {
+      border: 2px solid var(--ink);
+      border-radius: 999px;
+      padding: 0.3rem 1rem;
+    }
+
+    .project { padding: 1.2rem 0; border-top: 2px solid var(--sky); }
+    .project h3 { font-weight: 600; }
+    .project p { color: var(--soft); }
+
+    footer { padding: 2rem 8vw; font-size: 0.9rem; color: var(--soft); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- Decorative cloud drawing -->
+    <svg viewBox="0 0 600 300" aria-hidden="true">
+      <path fill="#FFFFFF" d="M120 250 a80 80 0 0 1 10-159 a110 110 0 0 1 205-30
+        a90 90 0 0 1 150 55 a70 70 0 0 1 -5 134 z"/>
+    </svg>
+    <h1>Amna Maryam Bhutto</h1>
+    <p>IT student learning how the cloud works, one deployment at a time.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About me</h2>
+      <p>I'm studying cloud computing and enjoy turning what I learn in class
+        into real things on the internet. This page is my first website,
+        written by hand and hosted on GitHub.</p>
+    </section>
+
+    <section>
+      <h2>What I'm learning</h2>
+      <ul class="skills">
+        <li>HTML &amp; CSS</li>
+        <li>Git &amp; GitHub</li>
+        <li>Netlify</li>
+        <li>Odoo CRM</li>
+        <li>Cloud basics (SaaS, PaaS, IaaS)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>This website</h3>
+        <p>A personal page built with HTML and CSS, version-controlled with Git.</p>
+      </div>
+      <div class="project">
+        <h3>Odoo CRM workspace</h3>
+        <p>Set up a cloud CRM to explore Software as a Service for my course.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email me at <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    </section>
+  </main>
+
+  <footer>Made by Amna &middot; 2026</footer>
+
+</body>
+</html>
